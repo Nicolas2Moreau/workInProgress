@@ -1,0 +1,14 @@
+.flex-container{
+    display: flex;
+    padding: 2rem;
+    border: 1rem;
+    border-color: black;
+}
+.flex-item{
+    padding: 20px;
+    background-color: teal;
+    border: 2px;
+    border-radius: 15%;
+    border-color: gold;
+    
+}

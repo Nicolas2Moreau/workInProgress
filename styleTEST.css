@@ -29,6 +29,7 @@ h2 {
 }
 
 .header {
+    /* height: 300px; */
     padding: 20px;
     background: lightgray;
     justify-content: space-around;
@@ -47,6 +48,10 @@ h2 {
     background: lightseagreen;
     /* height: 200px; */
 }
+
+/* .photo{
+    margin-left: -20%;
+} */
 
 .empty {
     background: cornflowerblue;

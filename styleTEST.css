@@ -47,6 +47,18 @@ h2 {
     height: 6vh;
     background: gold;
 }
+.h-spacer{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    /* top:  -1px; */
+    /* float: none; */
+    background: chartreuse;
+    border-radius: 50%;
+    /* margin: auto; */
+    /* z-index: -1; */
+    
+}
 
 .round-bar{
     display: flex;
@@ -71,8 +83,12 @@ margin-left: 20%;
 }
 
 .photo{ 
-    justify-self: flex-end;
- } 
+    display: flex;
+    justify-items: flex-end;
+    /* padding: 10px; */
+    /* margin: auto; */
+    /* justify-self: flex-end; */
+} 
 
 .empty {
     background: cornflowerblue;
@@ -120,6 +136,11 @@ margin-left: 20%;
 .empty-grow{
     flex-grow: 0.6;
 }
+.photo img{
+    margin: auto;
+    z-index: 2;
+    /* flex-shrink: */
+}
 
 
 @media screen and (max-width: 720px) {
@@ -127,13 +148,17 @@ margin-left: 20%;
         flex-direction: column;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .flex-wrap{
         flex-wrap: wrap;
+        justify-content: center;
     }
     .photo{
+        /* display: flex; */
         order: -1;
-        margin: auto;
+        /* margin: auto; */
+        /* height: auto; */
+        /* position: relative; */
         
     }
     /* .flex-container{

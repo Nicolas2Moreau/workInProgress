@@ -124,6 +124,30 @@ margin-left: 20%;
     background: lightyellow;
     /* flex: auto; */
 }
+
+.formation {
+    display: flex;
+    flex-basis: 50%;
+    /* flex-shrink: 0; */
+    background: lightyellow;
+    /* flex: auto; */
+}
+
+.skills {
+    display: flex;
+    flex-basis: 50%;
+    /* flex-shrink: 0; */
+    background: lightyellow;
+    /* flex: auto; */
+}
+
+.interet {
+    display: flex;
+    flex-basis: 50%;
+    /* flex-shrink: 0; */
+    background: lightyellow;
+    /* flex: auto; */
+}
 .contact{
     display: flex;
     justify-content: space-evenly;

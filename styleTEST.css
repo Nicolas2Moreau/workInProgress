@@ -43,6 +43,24 @@ h2 {
 }
 
 /* GLOBAL FRAME end  */
+.spacer{
+    height: 6vh;
+    background: gold;
+}
+
+.round-bar{
+    display: flex;
+    background: turquoise;
+    width: 45%;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    border-radius: 0px 20px 20px 0px;
+}
+.bar-txt{
+margin: auto;
+margin-left: 20%;
+}
 
 
 .header-item {

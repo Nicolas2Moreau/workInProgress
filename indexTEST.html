@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleTEST.css">
+    <link rel="stylesheet" href="styleTEST.css" id="css">
     <!-- external links START -->
     <script src="https://kit.fontawesome.com/b67db5f753.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +13,11 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat&display=swap" rel="stylesheet">
     <!-- external links END  -->
+    <script type="text/javascript" src="scriptTEST.js"></script>
     <title>Mon CV</title>
 </head>
 
-<body>
+<body onload="initBtn();">
     <div class="wave">
         <div class="custom-shape-divider-top">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -35,10 +36,8 @@
         <div class="flex-container header">
 
 
-            <div class="header-item decor">
-                <div class="empty">
-                    <p>Vide</p>
-                </div>
+            <div class="header-item decor" id="header-decor">
+
             </div>
 
             <div class="flex-container flex-wrap ">
@@ -52,16 +51,19 @@
                     </div>
                     <div class="contact name">
                         <div>
-                            <p>icone texte</p>
-                            <p>icone texte</p>
-                            <p>icone texte</p>
+                            <p><i class="fab fa-2x fa-linkedin"></i>icone texte</p>
+                            <p><i class="fas fa-2x fa-envelope"></i>icone texte</p>
                         </div>
                         <div>
-                            <p>icone texte</p>
-                            <p>icone texte</p>
+                            <p><i class="fab fa-2x fa-git-square"></i>icone texte</p>
+                            <p><i class="fas fa-2x fa-phone-square-alt"></i>icone texte</p>
                         </div>
-                        
+
                         <div class="empty-grow"></div>
+                        <button class="styled" type="button" id="btn">
+                            <h3>High <br>Contrast</h3>
+                        </button>
+
                     </div>
                 </div>
                 <!-- <div class="hole">empty</div> -->
@@ -75,7 +77,7 @@
         </div>
     </div>
     <div class="flex-container main">
-        
+
         <aside class="profil">
             <div class="header-item decor">
                 <div class="empty">
@@ -97,7 +99,7 @@
                 <div class="h-stack">
                     <div class="h-spacer"></div>
                     <p id="cursive"><span>A propos de moi: <br> <br></span> Actuellement en formation de
-                        développeur web Front-end chez simplon, je cherche un stage afin de consolider mon expérience en 
+                        développeur web Front-end chez simplon, je cherche un stage afin de consolider mon expérience en
                         développement. En reconversion à 34 ans, m'adapter est une seconde nature, et
                         j'apprecie le travail en equipe!</p>
                 </div>
@@ -160,10 +162,9 @@
                 </div>
             </div>
             <div class="v-stack">
-  
+
                 <div class="round-bar" id="formation-bar">
-                    <i
-                            class=" fas fa-3x fa-graduation-cap icone"></i>
+                    <i class=" fa fa-3x fa-graduation-cap icone"></i>
                     <h3 class="bar-txt">Formation</h3>
                 </div>
                 <div class="spacer"></div>

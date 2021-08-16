@@ -47,14 +47,14 @@ h2 {
 }
 
 .liner {
-    
-    position: absolute;
+    align-self: flex-end;
+    position: relative;
     margin-top: 10px;
-    left: 40px;
+    /* right: 2px; */
     background-color: #dadada;
-    height: 500px;
+    height: 100%;
     width: 10px;
-    border-radius: 20px 20px 20px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 .liner-two {
     
@@ -111,18 +111,23 @@ h2 {
 }
 
 .round-bar {
+ left: -30px;
     display: flex;
+    justify-content: flex-end;
     background: lightseagreen;
     /* width: 35%; */
     height: 35px;
     position: relative;
     top: 25px;
     border-radius: 0px 20px 20px 0px;
+
 }
 
 .bar-txt {
-    margin: auto;
-    margin-left: 15%;
+
+   margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
@@ -162,18 +167,24 @@ h2 {
 }
 
 .decor {
+    z-index: -5;
     display: flex;
     flex-direction: column;
 
     background-color: rgb(70, 70, 70);
 }
 
-/* .decor-inner {
+.decor-inner {
     display: flex;
     flex-direction: column;
-
-    background-color: rgb(255, 226, 162);
-} */
+width: 30px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.icone{
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
 
 .flex-column {
     display: flex;
@@ -189,13 +200,11 @@ h2 {
 }
 
 .profil {
-    /* margin-right: 1%; */
     display: flex;
     flex-basis: 50%;
     background: rgb(70, 70, 70);
     border-radius: 0% 30% 0% 0% / 0% 30% 0% 0%;
-    /* flex-shrink: 0; */
-    /* flex: auto; */
+
 
 }
 
@@ -252,7 +261,8 @@ h2 {
 /* blue title bars START  */
 
 #profil-bar {
-    width: 30%;
+  
+    width: 35%;
 }
 
 #xp-bar {
@@ -270,7 +280,7 @@ h2 {
 }
 
 #interet-bar {
-    width: 40%;
+    width: 45%;
 
 }
 
@@ -287,12 +297,14 @@ h2 {
     
     display: flex;
     justify-content: flex-end;
-    /* text-align: end; */
     width: 100%;
 }
 
 #cursive {
-    text-align: center;
+    /* margin: auto; */
+    margin-right: 15%;
+    margin-left: 5%;
+    text-align: left;
     color: white;
     font-family: 'MonteCarlo', cursive;
     font-size: 3rem;

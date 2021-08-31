@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleTEST.css">
     <link rel="stylesheet" href="styleTEST.css" id="css">
     <!-- external links START -->
     <script src="https://kit.fontawesome.com/b67db5f753.js" crossorigin="anonymous"></script>
@@ -17,7 +18,7 @@
     <title>Mon CV</title>
 </head>
 
-<body onload="initBtn();">
+<body>
     <div class="wave">
         <div class="custom-shape-divider-top">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -60,7 +61,7 @@
                         </div>
 
                         <div class="empty-grow"></div>
-                        <button class="styled" type="button" id="btn">
+                        <button onclick="swapCss()" class="styled" type="button" id="btn">
                             <h3>High <br>Contrast</h3>
                         </button>
 
@@ -85,7 +86,7 @@
                 </div>
             </div>
             <div class="header-item decor-inner">
-                <div class="liner">
+                <div class="top-liner">
                 </div>
             </div>
 
@@ -98,10 +99,11 @@
                 <div class="spacer"></div>
                 <div class="h-stack">
                     <div class="h-spacer"></div>
-                    <p id="cursive"><span>A propos de moi: <br> <br></span> Actuellement en formation de
-                        développeur web Front-end chez simplon, je cherche un stage afin de consolider mon expérience en
-                        développement. En reconversion à 34 ans, m'adapter est une seconde nature, et
-                        j'apprecie le travail en equipe!</p>
+                    <p class="light-txt"><span  id="cursive">A propos de moi: <br> <br></span> En reconversion professionnelle suite à un
+                        handicap moteur, je me forme depuis un an au développement.
+                        Je dispose donc d’une RQTH et suis en recherche active de stage financé par la région faisant
+                        suite à ma formation chez Simplon. Toujours motivé à apprendre et appréciant le travail en
+                        équipe, j’ai hâte de mettre mes nouvelles compétences en action!</p>
                 </div>
             </div>
         </aside>
@@ -211,7 +213,7 @@
                 </div>
             </div>
             <div class="header-item decor-inner">
-                <div class="liner">
+                <div class="bottom-liner">
                 </div>
             </div>
             <div class="v-stack">
@@ -220,10 +222,9 @@
                 </div>
                 <div class="spacer"></div>
                 <div class="h-stack">
-                    <p class="dark-txt"> <i class="fas fa-guitar fa-4x"></i> Guitare <br><i
-                            class=" fas fa-3x fa-palette"></i> Graphisme <br><i class=" fas fa-3x fa-tools"></i>
-                        Bricolage <br><i class=" fas fa-3x fa-hand-holding-medical"></i> Actions solidaires <br><i
-                            class=" fas fa-3x fa-graduation-cap"></i> Learning </p>
+                    <div class="hobby"><i class="fas fa-guitar fa-3x">Guitare</i><i
+                            class=" fas fa-3x fa-palette">Graphisme</i><i class=" fas fa-3x fa-tools"> Bricolage</i><i class=" fas fa-3x fa-hand-holding-medical">Actions <br> solidaires</i><i
+                            class=" fas fa-3x fa-graduation-cap">Learning</i></div>
                 </div>
             </div>
 

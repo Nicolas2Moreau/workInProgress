@@ -21,6 +21,11 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
+p {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* color: white; */
+}
 
 /* BASE RULES end  */
 
@@ -50,6 +55,16 @@ h2 {
 .liner {
     align-self: flex-end;
     position: relative;
+    margin-top: 0px;
+    /* right: 2px; */
+    background-color: #dadada;
+    height: 100%;
+    width: 10px;
+    /* border-radius: 20px 20px 0px 0px; */
+}
+.top-liner {
+    align-self: flex-end;
+    position: relative;
     margin-top: 10px;
     /* right: 2px; */
     background-color: #dadada;
@@ -57,7 +72,18 @@ h2 {
     width: 10px;
     border-radius: 20px 20px 0px 0px;
 }
-.liner-two {
+.bottom-liner{
+    align-self: flex-end;
+    position: relative;
+    background-color: #dadada;
+    height: 100%;
+    width: 10px;
+    margin-bottom: 120px;
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* .liner-two {
     
     position: absolute;
     bottom: 250 px;
@@ -66,7 +92,7 @@ h2 {
     height: 650px;
     width: 10px;
     border-radius: 20px 20px 20px 0px;
-}
+} */
 
 
 
@@ -96,7 +122,7 @@ h2 {
 
 }
 
-.h-spacer{
+.h-spacer {
     width: 15px;
     /* background: aliceblue; */
 }
@@ -112,7 +138,7 @@ h2 {
 }
 
 .round-bar {
- left: -30px;
+    left: -30px;
     display: flex;
     justify-content: flex-end;
     background: lightseagreen;
@@ -126,7 +152,7 @@ h2 {
 
 .bar-txt {
 
-   margin-right: 10%;
+    margin-right: 10%;
     margin-top: auto;
     margin-bottom: auto;
     color: white;
@@ -179,10 +205,11 @@ h2 {
 .decor-inner {
     display: flex;
     flex-direction: column;
-width: 30px;
+    width: 30px;
     background-color: rgba(0, 0, 0, 0);
 }
-.icone{
+
+.icone {
     position: absolute;
     top: 2px;
     left: 5px;
@@ -228,11 +255,11 @@ width: 30px;
 }
 
 .skills {
-    color: white;
+    color: black;
     display: flex;
     flex-basis: 50%;
     /* flex-shrink: 0; */
-    background: rgb(70, 70, 70);
+    background: rgb(255, 255, 255);
     /* flex: auto; */
 }
 
@@ -240,7 +267,7 @@ width: 30px;
     display: flex;
     flex-basis: 50%;
     /* flex-shrink: 0; */
-    background: white;
+    background: rgb(77, 77, 77);
     /* flex: auto; */
 }
 
@@ -264,7 +291,7 @@ width: 30px;
 /* blue title bars START  */
 
 #profil-bar {
-  
+
     width: 35%;
 }
 
@@ -297,9 +324,9 @@ width: 30px;
 }
 
 .h-stack {
-    
+
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
 }
 
@@ -322,18 +349,31 @@ width: 30px;
 
     color: rgb(66, 66, 66);
 }
-#header-decor{
+
+#header-decor {
     z-index: 1;
 }
+
 .light-txt {
     font-size: 2rem;
+    color: white;
 }
 
-.dark-txt {
+.hobby {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* align-items: baseline; */
+    justify-content: baseline;
     font-size: 2rem;
-    color: black;
-    
+    color: rgb(255, 255, 255);
 }
+
+.job-text {
+    font-size: 1.4rem;
+    color: black;
+}
+
 /* BTN style START */
 .styled {
     /* margin: auto; */
@@ -347,11 +387,11 @@ width: 30px;
     border-radius: 10px;
     background-color: rgb(75, 160, 172);
     background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 .styled:hover {
@@ -360,7 +400,7 @@ width: 30px;
 
 .styled:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 /* BT style END  */
@@ -377,13 +417,13 @@ width: 30px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     #test {
         width: 150px;
         height: 100px;
         transform: skew(20deg);
         background: red;
-      }
+    }
 
     .photo {
         /* display: flex; */

@@ -80,7 +80,7 @@ p {
     background-color: #dadada;
     height: 100%;
     width: 10px;
-    margin-bottom: 120px;
+    margin-bottom: 75px;
     margin-top: 0;
     border-radius: 0px 0px 20px 20px;
 }
@@ -364,7 +364,8 @@ p {
     color: white;
     /* font-family: 'MonteCarlo', cursive; */
     font-family: 'Caveat', cursive;
-    font-size: 3rem;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 2.5rem;
 }
 
 #firstname {
@@ -401,7 +402,6 @@ p {
     text-align: end;
     /* justify-self: right; */
     flex-basis: 45%;
-    margin-top: %;
     margin-bottom: 4%;
     margin-right: 6%;
     /* margin-left: 10%; */
@@ -409,8 +409,9 @@ p {
 }
 
 .hobby p {
-    font-family: fantasy;
+    font-family: Caveat;
     text-align: left;
+    font-size: 2.5rem;
     flex-basis: 49%;
 }
 
@@ -465,6 +466,7 @@ p {
         align-self: flex-end;
         position: relative;
         margin-top: 0px;
+        margin-bottom: 0px;
         /* right: 2px; */
         background-color: #dadada;
         height: 100%;

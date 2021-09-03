@@ -1,7 +1,39 @@
-/* BASE RULES start  */
+
+:root {
+    --dark-color: rgb(10, 10, 10);
+}
+
 /* * {
     background-color: rgb(14, 14, 14);
 } */
-#cursive{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+.custom-shape-divider-top {
+    fill: rgb(0, 0, 0);
+
+}
+
+.header {
+background: white;
+}
+.round-bar {
+    background: rgb(0, 0, 0);
+
+
+}
+.header-item {
+    background: rgba(255, 255, 255, 0);
+}
+.contact p {
+    flex-basis: 40%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+    /* background: rgba(153, 153, 153, 0.2); */
+
+    color: #000000;
+}
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
 }

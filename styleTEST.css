@@ -1,7 +1,20 @@
+/* variables START */
+:root {
+    --dark-color: rgb(77, 77, 77);
+}
+
+
+
+/* variables END  */
+
 /* BASE RULES start  */
 * {
 
     margin: 0px;
+}
+
+a {
+    color: rgb(26, 26, 26);
 }
 
 html {
@@ -226,7 +239,7 @@ p {
     display: flex;
     flex-direction: column;
 
-    background-color: rgb(77, 77, 77);
+    background-color: var(--dark-color);
 }
 
 .decor-inner {
@@ -259,7 +272,7 @@ p {
     display: flex;
     margin-right: 1%;
     flex-basis: 49%;
-    background: rgb(77, 77, 77);
+    background: var(--dark-color);
     border-radius: 0% 30% 0% 0% / 0% 30% 0% 0%;
 
 
@@ -278,7 +291,7 @@ p {
     display: flex;
     flex-basis: 49%;
     /* flex-shrink: 0; */
-    background: rgb(77, 77, 77);
+    background: var(--dark-color);
     /* flex: auto; */
 }
 
@@ -295,36 +308,117 @@ p {
 
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 4%;
 
 }
-.skill-box h2{
+
+.skill-box h2 {
+    /* margin: auto; */
+    color: rgb(54, 54, 54);
+    padding: 1%;
     font-family: 'Ubuntu', sans-serif;
+    text-shadow: -1px 1px 2px rgba(7, 74, 80, 0.54);
     font-size: 4rem;
+}
+
+#soft-skills h2 {
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    text-shadow: none;
+}
+
+#mad-skills h2 {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    text-shadow: none;
 }
 
 .interet {
     display: flex;
     flex-basis: 49%;
     /* flex-shrink: 0; */
-    background: rgb(77, 77, 77);
+    background: var(--dark-color);
     /* flex: auto; */
 }
 
 .contact {
+
+    /* background: rgba(104, 104, 104, 0.2); */
+    /* padding: 2%; */
     margin-top: 10px;
+    /* margin: auto; */
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+
+.contact p {
+    flex-basis: 40%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+    /* background: rgba(153, 153, 153, 0.2); */
+
+    color: #f3f3f3;
+}
+
+.contact i {
+
+    display: flex;
+    font-size: 1.8rem;
+}
+
+.contact div {
+    display: flex;
+
 }
 
 .empty-grow {
     flex-grow: 0.6;
 }
 
+
 .photo img {
     margin: auto;
     z-index: 2;
     /* flex-shrink: */
 }
+
+/* BTN style START */
+.styled {
+    margin: auto;
+    /* flex-basis: 25%; */
+    border: 0;
+    line-height: 1.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(75, 160, 172);
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    /* background-color: rgba(255, 0, 0, 1); */
+}
+
+.styled:active {
+    background-color: rgb(0, 68, 255);
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+/* BT style END  */
 
 
 /* blue title bars START  */
@@ -375,11 +469,11 @@ p {
     padding: 4%;
     margin-right: 15%;
     margin-left: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     text-align: left;
     color: white;
     font-family: 'Handlee', cursive;
-    /* line-height: 150%; */
+    line-height: 250%;
 
     /* font-family: 'Satisfy', cursive; */
 
@@ -393,6 +487,10 @@ p {
 
 #indent {
     padding-left: 1.2em;
+}
+
+#small-indent {
+    padding-left: 0.8rem;
 }
 
 #firstname {
@@ -451,39 +549,22 @@ p {
     color: black;
 }
 
-/* BTN style START */
-.styled {
-    /* margin: auto; */
-    border: 0;
-    line-height: 1.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgb(75, 160, 172);
-    background-image: linear-gradient(to top left,
-            rgba(0, 0, 0, .2),
-            rgba(0, 0, 0, .2) 30%,
-            rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-        inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+@media screen and (max-width: 1490px) {
+    #cursive {
+        line-height: 180%;
+    }
 }
 
-.styled:hover {
-    background-color: rgba(255, 0, 0, 1);
+@media screen and (max-width: 1024px) {
+    #cursive {
+        line-height: 160%;
+    }
+
 }
-
-.styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-        inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-/* BT style END  */
-
 
 @media screen and (max-width: 720px) {
+
     .main {
         flex-direction: column;
     }
@@ -516,9 +597,11 @@ p {
         justify-content: center;
     }
 
-    #cursive{
+    #cursive {
         font-size: 2rem;
+        line-height: 150%;
     }
+
     #test {
         width: 150px;
         height: 100px;

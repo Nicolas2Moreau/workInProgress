@@ -1,0 +1,637 @@
+/* variables START */
+:root {
+    --dark-color: rgb(77, 77, 77);
+}
+
+
+
+/* variables END  */
+
+/* BASE RULES start  */
+* {
+
+    margin: 0px;
+}
+
+a {
+    color: rgb(26, 26, 26);
+}
+
+html {
+    font-size: 10px;
+    margin: 0px;
+    background: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+
+    font-family: Montserrat;
+    /* color: white; */
+}
+
+/* BASE RULES end  */
+
+/* GLOBAL FRAME start  */
+.custom-shape-divider-top {
+    z-index: 1;
+    fill: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.flex-container {
+    justify-content: space-between;
+    display: flex;
+    flex-basis: 100%;
+}
+
+.wave {
+    display: flex;
+    position: relative;
+}
+
+.liner {
+    align-self: flex-end;
+    position: relative;
+    margin-top: 0px;
+    /* right: 2px; */
+    background-color: #dadada;
+    height: 100%;
+    width: 10px;
+    /* border-radius: 20px 20px 0px 0px; */
+}
+
+.top-liner {
+    align-self: flex-end;
+    position: relative;
+    margin-top: 10px;
+    /* right: 2px; */
+    background-color: #dadada;
+    height: 100%;
+    width: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.bottom-liner {
+    align-self: flex-end;
+    position: relative;
+    background-color: #dadada;
+    height: 100%;
+    width: 10px;
+    margin-bottom: 75px;
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.xp-liner {
+    align-self: flex-end;
+    position: relative;
+    margin-top: 10px;
+    /* right: 2px; */
+    background-color: #dadada;
+    height: 100%;
+    width: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.skill-liner {
+    align-self: flex-end;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    background-color: #dadada;
+    height: 100%;
+    width: 10px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+/* .liner-two {
+    
+    position: absolute;
+    bottom: 250 px;
+    left: 40px;
+    background-color: #ff0000;
+    height: 650px;
+    width: 10px;
+    border-radius: 20px 20px 20px 0px;
+} */
+
+
+
+.header {
+    /* height: 300px; */
+    /* padding: 20px; */
+    display: flex;
+    margin-top: 1%;
+    margin-right: 1%;
+    background: lightseagreen;
+    /* justify-content: space-around; */
+}
+
+.main {
+    margin-top: 1%;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    background: white;
+}
+
+.v-stack {
+    width: 100%;
+}
+
+/* GLOBAL FRAME end  */
+.spacer {
+    height: 6vh;
+
+}
+
+.h-spacer {
+    width: 15px;
+    /* background: aliceblue; */
+}
+
+.round-bar-light {
+    display: flex;
+    background: #dadada;
+    width: 40%;
+    height: 55px;
+    position: relative;
+    /* top: 50px; */
+    border-radius: 0px 40px 40px 0px;
+}
+
+.round-bar {
+    left: -30px;
+    display: flex;
+    justify-content: flex-end;
+    background: lightseagreen;
+    /* width: 35%; */
+    height: 35px;
+    position: relative;
+    top: 25px;
+    border-radius: 0px 20px 20px 0px;
+
+}
+
+.bar-txt {
+
+    margin-right: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+}
+
+
+.round-bar-light h3 {
+    margin: auto;
+    margin-left: 5%;
+    color: rgb(75, 75, 75);
+    font-family: Montserrat;
+    font-size: 1.2rem;
+}
+
+
+.header-item {
+    /* flex-basis: content; */
+    /* margin: auto; */
+    background: lightseagreen;
+    /* height: 200px; */
+}
+
+.header-item h2 {
+    color: white;
+}
+
+.photo {
+    display: flex;
+    justify-items: flex-end;
+    /* padding: 10px; */
+    /* margin: auto; */
+    /* justify-self: flex-end; */
+}
+
+.empty {
+    background: cornflowerblue;
+    margin: auto;
+}
+
+.decor {
+    z-index: -5;
+    width: 16px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--dark-color);
+}
+
+.decor-inner {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.icone {
+    display: flex;
+    padding: 8px;
+    border-radius: 100%;
+    background: rgb(255, 255, 255);
+    color: rgb(27, 27, 27);
+    position: absolute;
+    top: -7px;
+    left: -15px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .flex-column h1{
+    
+} */
+.flex-wrap {
+    flex-wrap: nowrap;
+}
+
+.profil {
+    display: flex;
+    margin-right: 1%;
+    flex-basis: 49%;
+    background: var(--dark-color);
+    border-radius: 0% 30% 0% 0% / 0% 30% 0% 0%;
+
+
+}
+
+.xp {
+    display: flex;
+    flex-basis: 49%;
+    /* flex-shrink: 0; */
+    background: white;
+    /* flex: auto; */
+}
+
+.formation {
+    color: white;
+    display: flex;
+    flex-basis: 49%;
+    /* flex-shrink: 0; */
+    background: var(--dark-color);
+    /* flex: auto; */
+}
+
+.skills {
+    color: black;
+    display: flex;
+    flex-basis: 49%;
+    /* flex-shrink: 0; */
+    background: rgb(255, 255, 255);
+    /* flex: auto; */
+}
+
+.skill-box {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 4%;
+
+}
+
+.skill-box h2 {
+    /* margin: auto; */
+    color: rgb(54, 54, 54);
+    padding: 1%;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: -1px 1px 2px rgba(7, 74, 80, 0.54);
+    font-size: 4rem;
+}
+
+#soft-skills h2 {
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    text-shadow: none;
+}
+
+#mad-skills h2 {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    text-shadow: none;
+}
+
+.interet {
+    display: flex;
+    flex-basis: 49%;
+    /* flex-shrink: 0; */
+    background: var(--dark-color);
+    /* flex: auto; */
+}
+
+.contact {
+    z-index: 3;
+    /* background: rgba(104, 104, 104, 0.2); */
+    /* padding: 2%; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* margin: auto; */
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+
+.contact p {
+    flex-basis: 40%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+    /* background: rgba(153, 153, 153, 0.3); */
+    /* border-radius: 25%; */
+
+    /* color: #f3f3f3; */
+    color: rgb(39, 39, 39);
+}
+
+.contact p {
+
+    display: flex;
+    font-size: 1.8rem;
+}
+
+.contact div {
+    display: flex;
+
+}
+
+.empty-grow {
+    flex-grow: 0.6;
+}
+
+
+.photo img {
+    margin: auto;
+    z-index: 2;
+    /* flex-shrink: */
+}
+
+/* BTN style START */
+.styled {
+    /* display: flex; */
+    z-index: 3;
+    margin: auto;
+
+    /* flex-basis: 25%; */
+    border: 0;
+    line-height: 1.5;
+    padding: 0 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(124, 124, 124);
+
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgb(147, 255, 250);
+}
+
+.styled:active {
+    background-color: rgb(75, 160, 172);
+
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+/* BT style END  */
+
+
+/* blue title bars START  */
+
+#profil-bar {
+
+    width: 35%;
+}
+
+#xp-bar {
+    width: 50%;
+
+}
+
+#formation-bar {
+    width: 50%;
+}
+
+#skill-bar {
+    width: 60%;
+
+}
+
+#interet-bar {
+    width: 45%;
+
+}
+
+/* blue title bar END  */
+.name {
+    z-index: 5;
+}
+
+.name h2 {
+    text-shadow: 1px 1px black, -1px 2px black;
+}
+
+.h-stack {
+
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+}
+
+#cursive {
+    /* margin: auto; */
+    padding: 4%;
+    margin-right: 15%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    text-align: left;
+    color: white;
+    font-family: 'Handlee', cursive;
+    line-height: 250%;
+
+    /* font-family: 'Satisfy', cursive; */
+
+    /* font-family: 'MonteCarlo', cursive; */
+    /* font-family: 'Qwigley', cursive; */
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 2.5rem;
+    font-size: 2.7rem;
+
+}
+
+#indent {
+    padding-left: 1.2em;
+}
+
+#small-indent {
+    padding-left: 0.8rem;
+}
+
+#firstname {
+    text-shadow: -1px -1px grey, 1px -1px 0 grey, -1px 1px 0 #000, 1px 1px 0 grey;
+    color: white;
+}
+
+#lastname {
+
+    color: rgb(66, 66, 66);
+}
+
+#header-decor {
+    z-index: 1;
+}
+
+.light-txt {
+    padding: 7%;
+    padding-bottom: 0%;
+    font-size: 2rem;
+    color: white;
+}
+
+.hobby {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    padding: 5%;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.hobby i {
+    text-align: end;
+    /* justify-self: right; */
+    flex-basis: 30%;
+    margin-bottom: 4%;
+    margin-right: 16%;
+    /* margin-left: 10%; */
+}
+
+
+.hobby p {
+    font-family: Handlee;
+    text-align: left;
+    font-size: 2.5rem;
+    flex-basis: 49%;
+}
+
+.job-text {
+    padding: 4%;
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    color: black;
+}
+
+
+@media screen and (max-width: 1490px) {
+    #cursive {
+        line-height: 180%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #cursive {
+        line-height: 160%;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .xp-liner {
+
+        margin-top: 0px;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .skill-liner {
+        align-self: flex-end;
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        /* right: 2px; */
+        background-color: #dadada;
+        height: 100%;
+        width: 10px;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .flex-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #cursive {
+        font-size: 2rem;
+        line-height: 150%;
+    }
+
+    #test {
+        width: 150px;
+        height: 100px;
+        transform: skew(20deg);
+        background: red;
+    }
+
+    .photo {
+        /* display: flex; */
+        order: -1;
+        /* margin: auto; */
+        /* height: auto; */
+        /* position: relative; */
+
+    }
+
+    /* .flex-container{
+        justify-content: space-evenly;
+    } */
+}

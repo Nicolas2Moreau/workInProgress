@@ -1,0 +1,45 @@
+
+:root {
+    --dark-color: rgb(10, 10, 10);
+}
+
+/* * {
+    background-color: rgb(14, 14, 14);
+} */
+
+.custom-shape-divider-top {
+    fill: rgb(0, 0, 0);
+
+}
+
+.header {
+background: white;
+}
+.round-bar {
+    background: rgb(0, 0, 0);
+
+
+}
+.header-item {
+    background: rgba(255, 255, 255, 0);
+}
+.contact p {
+    flex-basis: 40%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+    /* background: rgba(153, 153, 153, 0.2); */
+
+    color: #000000;
+}
+.styled:hover {
+    background-color: rgb(22, 22, 22);
+}
+/* .styled:active {
+    background-color: rgb(75, 160, 172);
+    
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+} */

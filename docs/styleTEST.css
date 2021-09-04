@@ -402,9 +402,9 @@ p {
     margin: auto;
 
     /* flex-basis: 25%; */
-    border: 0;
-    line-height: 1.5;
-    padding: 0 10px;
+    border: 1;
+    line-height: 1;
+    padding: 3px 10px;
     font-size: 1rem;
     font-family: Montserrat;
     text-align: center;

@@ -143,11 +143,6 @@ p {
     height: 6vh;
 }
 
-.h-spacer {
-    width: 15px;
-    /* background: aliceblue; */
-}
-
 .round-bar-light {
     display: flex;
     background: #dadada;
@@ -450,6 +445,7 @@ p {
 #cursive {
     /* margin: auto; */
     padding: 4%;
+    margin-top: 5%;
     margin-right: 15%;
     margin-left: 5%;
     margin-bottom: 5%;
@@ -486,9 +482,12 @@ p {
 
 .light-txt {
     padding: 7%;
-    padding-bottom: 0%;
+    /* padding-bottom: 0%; */
+    /* padding-top: 15%; */
     font-size: 2rem;
     color: white;
+    margin: auto;
+    /* margin-top: 15%; */
 }
 
 .hobby {
